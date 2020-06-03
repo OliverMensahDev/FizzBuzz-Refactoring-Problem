@@ -95,9 +95,7 @@ class FizzBuzzBazzRule  implements RuleInterface
   }
 }
 
-
-
-class FizzBuzzBazz
+class FizzBuzz
 {
   private $rules;
 
@@ -132,6 +130,6 @@ $rules = [
   new FizzBuzzRule(),
   new FizzBuzzBazzRule
 ];
-$fizzBuzz = new FizzBuzzBazz($rules);
+$fizzBuzz = new FizzBuzz($rules);
 $list = $fizzBuzz->generateList(100);
 var_dump($list);
