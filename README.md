@@ -1,5 +1,3 @@
-# Implementation of FizzBuzz extensibility using PH
-
 ## Problem
 
 Mostly coding up fizzbuzz solution is easier by just returning some value when requirements are met. However, when the requirement keeps changing, say, replace all numbers divisible by 7 with `Whizz`, all we do is just adding one more condition. It is good that way but it does not improve the design of our code and also violates Open/Closed Principle(OCP) of the SOLID principle.
