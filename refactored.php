@@ -31,6 +31,44 @@ class BuzzRule  implements RuleInterface
   }
 }
 
+class BazzRule  implements RuleInterface
+{
+  public function matches(int $number): bool
+  {
+    return $number % 7 === 0;
+  }
+
+  public function getReplacement(): string
+  {
+    return 'Bazz';
+  }
+}
+
+class BuzzBazzRule  implements RuleInterface
+{
+  public function matches(int $number): bool
+  {
+    return $number % 5 === 0 && $number % 7 === 0;
+  }
+
+  public function getReplacement(): string
+  {
+    return 'BuzzBazz';
+  }
+}
+
+class FizzBazzRule  implements RuleInterface
+{
+  public function matches(int $number): bool
+  {
+    return $number % 3 === 0 &&  $number % 7 === 0;
+  }
+
+  public function getReplacement(): string
+  {
+    return 'FizzBazz';
+  }
+}
 class FizzBuzzRule  implements RuleInterface
 {
   public function matches(int $number): bool
@@ -44,7 +82,22 @@ class FizzBuzzRule  implements RuleInterface
   }
 }
 
-class FizzBuzz
+class FizzBuzzBazzRule  implements RuleInterface
+{
+  public function matches(int $number): bool
+  {
+    return $number % 3 === 0 &&  $number % 5 === 0 && $number % 7 === 0;
+  }
+
+  public function getReplacement(): string
+  {
+    return 'FizzBuzzBazz';
+  }
+}
+
+
+
+class FizzBuzzBazz
 {
   private $rules;
 
@@ -71,10 +124,14 @@ class FizzBuzz
 }
 
 $rules = [
-  new FizzBuzzRule(),
   new FizzRule(),
-  new BuzzRule()
+  new BuzzRule(),
+  new BazzRule,
+  new BuzzBazzRule,
+  new FizzBazzRule,
+  new FizzBuzzRule(),
+  new FizzBuzzBazzRule
 ];
-$fizzBuzz = new FizzBuzz($rules);
+$fizzBuzz = new FizzBuzzBazz($rules);
 $list = $fizzBuzz->generateList(100);
 var_dump($list);
