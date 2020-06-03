@@ -4,7 +4,7 @@ Mostly coding up fizzbuzz solution is easier by just returning some value when r
 
 ## Solution
 
-You can adhere to the OCP principle by removing this specifics from the FizzBuzz class using interface. The specifics here are matching condition and replacement of value. Then let each specific implement the interface and then inject all the specifics to the fizzbuzz class
+You can adhere to the OCP principle by removing specifics from the FizzBuzz class using interface. The specifics here are matching condition and replacement of value. Then let each specific implement the interface and then inject all the specifics to the fizzbuzz class
 
 ## Benefits
 
