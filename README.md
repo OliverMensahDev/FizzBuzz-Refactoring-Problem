@@ -1,6 +1,7 @@
-## Problem
+## Problem (inspired by this [work](https://itnext.io/fizzbuzzbazz-how-to-answer-and-how-not-to-answer-661fd8842c40))
 
-Mostly coding up fizzbuzz solution is easier by just returning some value when requirements are met. Then a new requirement comes that says replace all numbers divisible by 7 with `Whizz`. All we mostly do is just adding one more check then return what is needed to. It is good that way but it does not improve the design of our code and also violates software design principles like Open/Closed Principle(OCP) of the SOLID principle.
+Mostly coding up fizzbuzz solution is easier by just returning some value when requirements are met. Then a new requirement to handle multiples of 7 such that if a number is a multiple of 7, output Bazz.for a multiple of 7 AND 3, output FizzBazz, for a multiple of 7 AND 5, output BuzzBazz.
+All we mostly do is just adding more checks then return what is needed to. It is good that way but it does not improve the design of our code and also violates software design principles like Open/Closed Principle(OCP) of the SOLID principle.
 
 ## Solution
 
