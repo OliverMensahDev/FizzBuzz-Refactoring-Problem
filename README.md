@@ -2,5 +2,6 @@
 
 ## Test code 
 
-`php fizzbuzz.php`
-`php refactored.php`
+1. `php fizzbuzz.php`
+
+2. `php refactored.php`
