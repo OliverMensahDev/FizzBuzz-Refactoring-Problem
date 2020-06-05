@@ -122,13 +122,13 @@ class FizzBuzz
 }
 
 $rules = [
+  new FizzBuzzBazzRule,
+  new FizzBuzzRule(),
+  new BuzzBazzRule,
+  new FizzBazzRule,
   new FizzRule(),
   new BuzzRule(),
   new BazzRule,
-  new BuzzBazzRule,
-  new FizzBazzRule,
-  new FizzBuzzRule(),
-  new FizzBuzzBazzRule
 ];
 $fizzBuzz = new FizzBuzz($rules);
 $list = $fizzBuzz->generateList(100);
